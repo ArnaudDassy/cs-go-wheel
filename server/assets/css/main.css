@@ -1,0 +1,262 @@
+body {
+  background-color: black;
+}
+
+.slot {
+  text-align: center;
+}
+
+.slot__image {
+  background-image: url("../img/background-slot.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% 100%;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.slot__image img {
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+
+.howToPlay {
+  color: white;
+  padding: 24px 5%;
+  font-size: 1.5em;
+}
+.howToPlay h2 {
+  font-size: 6rem;
+  padding-bottom: 6px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #CC3E3A;
+}
+.howToPlay li {
+  list-style-type: none;
+  margin: 12px 0;
+}
+.howToPlay li span {
+  display: inline-block;
+  margin-right: 12px;
+  border: 2px solid white;
+  padding: 6px 14px;
+  border-radius: 24px;
+}
+.howToPlay ol {
+  width: 50%;
+  float: left;
+}
+.howToPlay .howToPlay__button-container {
+  display: inline-block;
+  width: 45%;
+  height: 250px;
+  line-height: 250px;
+  vertical-align: middle;
+}
+.howToPlay .howToPlay__button-container button {
+  display: inline;
+  font-size: 1.5em;
+}
+
+main > h2 {
+  color: white;
+  text-align: center;
+  font-size: 7rem;
+}
+
+footer {
+  width: 100%;
+  clear: both;
+  background-color: #CC3E3A;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 24px;
+}
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+.profil {
+  border: 2px solid #CC3E3A;
+  margin-left: 1.07656%;
+  margin-bottom: 24px;
+  margin-right: 1.07656%;
+  padding: 12px;
+  width: 45%;
+  color: white;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.profil__image {
+  display: inline-block;
+}
+
+.profil__image img {
+  width: 250px;
+  margin-right: 12px;
+  margin-bottom: 24px;
+  float: left;
+}
+
+.profil__infos {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.profil__infos__name {
+  font-size: 2em;
+  color: #CC3E3A;
+}
+
+.profil__trade-url__header {
+  display: block;
+  font-size: 1.5em;
+}
+.profil__trade-url__header a {
+  color: #CC3E3A;
+}
+
+.profil__trade-url input[type='text'] {
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.history {
+  width: 51.77033%;
+  display: inline-block;
+  color: white;
+}
+.history a {
+  color: #CC3E3A;
+}
+
+.inventory {
+  padding: 0 1.07656%;
+}
+
+.inventory__header {
+  color: #CC3E3A;
+  font-size: 3em;
+}
+
+.inventory__container {
+  width: 100%;
+  padding: 6px;
+}
+
+.inventory__item {
+  display: inline-block;
+  color: #CC3E3A;
+  margin: 6px;
+  padding: 6px;
+  border: 2px solid #CC3E3A;
+  text-align: center;
+}
+
+.inventory__item__img {
+  height: 80px;
+  width: 100px;
+}
+
+.steam_inventory {
+  display: inline-block;
+}
+
+.arrow {
+  display: inline-block;
+  width: 200px;
+  height: 804px;
+  vertical-align: top;
+  text-align: center;
+}
+.arrow div {
+  display: inline-block;
+  -webkit-transform: translateY(180%);
+      -ms-transform: translateY(180%);
+          transform: translateY(180%);
+}
+
+.dropper {
+  background-color: white;
+  width: 797px;
+  height: 804px;
+  padding: 6px;
+  overflow-y: scroll;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.drop_hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8) inset;
+}
+
+.draggable {
+  float: left;
+  margin: 6px;
+  cursor: move;
+  -webkit-transition: all 200ms linear;
+  transition: all 200ms linear;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.button_confirm_transaction {
+  margin-top: 24px;
+  width: 100%;
+  text-align: center;
+}
+
+.large_inventory {
+  width: 100%;
+  height: 618px;
+  background-color: white;
+  padding: 6px;
+  overflow-y: scroll;
+}
+
+.steam_inventory_large {
+  width: 100%;
+}
+
+.button_get_coins {
+  text-align: right;
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.shop__container {
+  width: 1368px;
+  margin: 0 auto;
+  text-align: center;
+}
+.shop__container .inventory__item__img {
+  width: 200px;
+  height: 160px;
+}
+.shop__container button {
+  margin: 6px 0;
+}
+
+.shop__search_area {
+  width: 1356px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #CC3E3A;
+  color: white;
+  text-align: center;
+  margin: 24px auto;
+}
+
+/*# sourceMappingURL=main.css.map */

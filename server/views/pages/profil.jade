@@ -1,0 +1,38 @@
+extends ../layout.jade
+
+block main
+    main
+        section.userProfil
+            .profil
+                .profil__image
+                    img(src='', alt='profil picture')#toFill__img_profil
+                .profil__infos
+                    p.profil__infos__name
+                        span#toFill__nom_steam
+                    p Nombre de coins : &nbsp;
+                        span#toFill__nombre_coins
+                    p Nombre de coins gagn&eacute;s : &nbsp;
+                        span#toFill__nombre_coins_won
+                    p Nombre de skins d&eacute;pos&eacute;s : &nbsp;
+                        span#toFill__nombre_depot_skin
+                    p Valeur totale de skins d&eacute;pos&eacute;s : &nbsp;
+                        span#toFill__valeur_depot
+                    p Nombre de skins r&eacute;cup&eacute;r&eacute;s : &nbsp;
+                        span#toFill__nombre_retrait
+                    p Valeur totale de skins r&eacute;cup&eacute;r&eacute;s : &nbsp;
+                        span#toFill__valeur_retrait
+            .history
+                ul.nav-tabs
+                    li.active Skins d&eacute;pos&eacute;s
+                    li Skins retir&eacute;s
+                    li Coins
+                .tab-content
+                    #tab-dropped.tab-active
+                        p Pas de dépot pour l'instant
+                    #tab-removed
+                        p Pas de retrait pour l'instant
+                    #tab-coins
+                        p Pas d'historique pour l'instant
+        p.inventory__header Inventaire Steam
+        section#inventory
+        script(type='text/javascript', src='./js/loadInventory.js')

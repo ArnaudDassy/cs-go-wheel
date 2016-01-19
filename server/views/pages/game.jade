@@ -1,0 +1,49 @@
+extends ../layout.jade
+
+block main
+  main.play
+    .game
+      .arrayOfCombinaisons
+        ol.arrayOfCombinaisons__list
+          h3 Combinaisons
+          li 3*
+            img(src='./img/slotmachine/1_small.png' alt='Decoi')
+            span.badScore 0 Coins
+          li 3*
+            img(src='./img/slotmachine/2_small.png' alt='Glock')
+            span.goodScore + 10 Coins  
+          li 3*
+            img(src='./img/slotmachine/3_small.png' alt='Ak')
+            span.goodScore + 30 Coins
+          li 3*
+            img(src='./img/slotmachine/4_small.png' alt='M4')
+            span.goodScore + 50 Coins
+          li 3*
+            img(src='./img/slotmachine/5_small.png' alt='Deagle')
+            span.goodScore + 100 Coins  
+          li 3*
+            img(src='./img/slotmachine/6_small.png' alt='Awp')
+            span.goodScore + 200 Coins
+          li 3*
+            img(src='./img/slotmachine/7_small.png' alt='Knife')
+            span.goodScore + 1000 Coins
+      .slotMachine
+        img(src='./img/slot.jpg')
+        .slotMachine__slotOne
+          canvas(id='slot_one' width='194' height='992')
+          .topShadow
+          .bottomShadow
+        .slotMachine__slotTwo
+          canvas(id='slot_two' width='194' height='992')
+          .topShadow
+          .bottomShadow
+        .slotMachine__slotThree
+          canvas(id='slot_three' width='194' height='992')
+          .topShadow
+          .bottomShadow
+        button(type='button' id='playButton') Jouer !
+        script(src="./js/game.js")
+      .historyOfGames
+        h3 Historique
+        ol#history
+          

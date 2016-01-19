@@ -1,0 +1,483 @@
+@import url(https://fonts.googleapis.com/css?family=Play:400,700|NTR);
+body {
+  background-color: black;
+  font-family: "Play", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0 24px;
+  border-bottom: 2px solid #cc3e3a;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 12px; }
+  nav ul img {
+    vertical-align: middle; }
+
+.navigation__links {
+  flex: 1;
+  display: flex;
+  align-items: stretch; }
+  .navigation__links li {
+    display: flex;
+    align-items: stretch; }
+    .navigation__links li:first-child a {
+      border: none; }
+      .navigation__links li:first-child a:hover {
+        background-color: black; }
+    .navigation__links li:last-child a {
+      border-right: 2px solid #cc3e3a; }
+  .navigation__links a {
+    font-size: 2rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 24px;
+    border-left: 2px solid #cc3e3a;
+    transition: all 0.3s linear; }
+    .navigation__links a:hover {
+      background-color: #cc3e3a; }
+
+.navigation__steamLog {
+  display: flex;
+  align-items: center; }
+
+.slot {
+  text-align: center; }
+
+.slot__image {
+  background-image: url("../img/background-slot.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 100% 100%;
+  width: 50%;
+  margin: 0 auto; }
+
+.slot__image img {
+  width: 75%;
+  display: block;
+  margin: 0 auto; }
+
+.startPlay__button_container {
+  margin-top: 24px; }
+  .startPlay__button_container a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #cc3e3a; }
+
+main {
+  width: 100%;
+  box-sizing: border-box; }
+
+main > h2 {
+  color: white;
+  text-align: center;
+  font-size: 7rem;
+  margin: 48px; }
+
+footer {
+  width: 100%;
+  clear: both;
+  background-color: #cc3e3a;
+  color: white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 24px; }
+  footer p {
+    margin: 0;
+    padding: 0; }
+
+.userProfil {
+  display: flex;
+  margin: 48px; }
+
+.profil {
+  border: 2px solid #cc3e3a;
+  margin-right: 48px;
+  padding: 12px;
+  flex: 1;
+  color: white;
+  display: flex; }
+  .profil img {
+    width: 271px; }
+
+.profil__infos {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column; }
+  .profil__infos p {
+    font-size: 24px;
+    flex: 1; }
+  .profil__infos .profil__infos__name {
+    font-size: 34px;
+    color: #cc3e3a; }
+
+.history {
+  color: white; }
+  .history a {
+    color: #cc3e3a; }
+
+.steam_inventory {
+  display: inline-block; }
+
+.shop__container {
+  width: 1368px;
+  margin: 0 auto;
+  text-align: center; }
+  .shop__container .inventory__item__img {
+    width: 200px;
+    height: 160px; }
+  .shop__container button {
+    margin: 6px 0; }
+
+.shop__search_area {
+  width: 1368 -12px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #cc3e3a;
+  color: white;
+  text-align: center;
+  margin: 24px auto; }
+
+#inventory {
+  display: flex;
+  width: 100%;
+  padding: 0 36px;
+  box-sizing: border-box;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.depot .inventory__container {
+  text-align: left;
+  box-sizing: content-box;
+  width: 1370px;
+  font-size: 0; }
+
+.inventory__header {
+  color: #cc3e3a;
+  font-size: 3em;
+  margin: 48px;
+  margin-bottom: 36px; }
+
+.inventory__item {
+  border: 4px solid #cc3e3a;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  flex-direction: row;
+  margin: 12px;
+  max-width: 300px; }
+
+.depot .inventory__item {
+  cursor: pointer; }
+
+.inventory__item__name, .inventory__item__quality_and_price {
+  color: white;
+  width: 100%;
+  background-color: #cc3e3a;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 3px;
+  transition: all 0.3s linear; }
+
+.inventory__item__name p {
+  padding: 0;
+  margin: 0; }
+
+.inventory__item__tags {
+  text-align: left;
+  padding: 12px; }
+
+.inventory__item__tags p {
+  display: inline-block;
+  padding: 6px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0 0 2px black;
+  border-radius: 6px; }
+
+.inventory__item__tags__st {
+  background-color: orange;
+  margin-right: 6px; }
+
+.quality__Common {
+  background-color: #afafaf; }
+
+.quality__Uncommon {
+  background-color: #6496e1; }
+
+.quality__Rare {
+  background-color: #4b69cd; }
+
+.quality__Mythical {
+  background-color: #8847ff; }
+
+.quality__Legendary {
+  background-color: #d32ce6; }
+
+.quality__Ancient {
+  background-color: #eb4b4b; }
+
+.inventory__item__quality_and_price {
+  text-align: left;
+  padding: 6px;
+  padding-bottom: 0; }
+
+.inventory__item__price, .prices {
+  float: right; }
+  .inventory__item__price:after, .prices:after {
+    content: "$"; }
+
+.tradeItems {
+  position: fixed;
+  right: 24px;
+  top: 291px;
+  width: 450px;
+  height: 622px;
+  box-sizing: border-box;
+  color: black;
+  background-color: white;
+  padding: 12px;
+  display: flex;
+  flex-direction: column; }
+  .tradeItems ul {
+    flex: 1;
+    list-style-type: disc;
+    padding-left: 12px; }
+  .tradeItems li {
+    line-height: 1.3; }
+  .tradeItems form {
+    border-top: 1px solid black; }
+  .tradeItems input {
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    padding: 12px 0; }
+
+.selectedItem {
+  border-color: #00dc00; }
+  .selectedItem .inventory__item__name, .selectedItem .inventory__item__quality_and_price {
+    background-color: #00dc00; }
+
+.inventory__item, .inventory__item > * {
+  box-sizing: border-box; }
+
+.inventory__item__img {
+  width: 100%;
+  min-width: 200px;
+  margin: 0 auto;
+  max-width: 247px; }
+
+.hidden {
+  display: none; }
+
+.depot #inventory {
+  width: calc(100% - 48px - 450px);
+  padding: 0;
+  margin-left: 12px; }
+
+.game {
+  display: flex;
+  align-items: center; }
+  .game h3 {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 24px; }
+
+.arrayOfCombinaisons, .historyOfGames {
+  flex: 1; }
+
+.arrayOfCombinaisons {
+  padding: 48px 24px;
+  background-color: black; }
+  .arrayOfCombinaisons ol {
+    border: 2px solid #cc3e3a;
+    border-radius: 24px;
+    padding: 24px;
+    margin-top: 24px; }
+    .arrayOfCombinaisons ol li {
+      color: white;
+      display: flex;
+      align-items: center;
+      font-size: 1.6em;
+      margin-bottom: 12px; }
+      .arrayOfCombinaisons ol li img {
+        margin-right: 24px;
+        margin-left: 12px; }
+
+.badScore {
+  color: red; }
+
+.goodScore {
+  color: green; }
+
+.historyOfGames {
+  height: 458px;
+  margin-right: 24px;
+  overflow: auto; }
+  .historyOfGames ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .historyOfGames li {
+    flex: 1;
+    margin-bottom: 12px;
+    font-size: 24px;
+    text-align: left; }
+    .historyOfGames li .dateHistory {
+      font-size: 0.8em;
+      color: white;
+      margin-right: 12px; }
+
+.slotMachine {
+  margin: 0 auto;
+  width: 1024px;
+  position: relative; }
+  .slotMachine canvas {
+    position: absolute;
+    top: -580px;
+    background-color: white;
+    display: inline; }
+  .slotMachine button {
+    width: 763px;
+    height: 100px;
+    position: absolute;
+    bottom: 126px;
+    left: 133px;
+    font-family: "Play", sans-serif;
+    font-size: 3rem;
+    background: #f85032;
+    background: -moz-linear-gradient(top, #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%);
+    background: -webkit-linear-gradient(top, #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%);
+    background: linear-gradient(to bottom, #f85032 0%, #f16f5c 50%, #f6290c 51%, #f02f17 71%, #e73827 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f85032', endColorstr='#e73827',GradientType=0 );
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s linear; }
+    .slotMachine button:hover {
+      opacity: 0.9; }
+    .slotMachine button:active {
+      -webkit-box-shadow: inset 0px 0px 27px 0px black;
+      -moz-box-shadow: inset 0px 0px 27px 0px black;
+      box-shadow: inset 0px 0px 27px 0px black; }
+  .slotMachine > div {
+    position: absolute;
+    width: 194px;
+    height: 271px;
+    display: inline-block;
+    top: 335px;
+    overflow: hidden; }
+    .slotMachine > div > div {
+      width: 100%;
+      height: 100px;
+      position: absolute;
+      -webkit-box-shadow: inset 0px 39px 27px -23px black;
+      -moz-box-shadow: inset 0px 39px 27px -23px black;
+      box-shadow: inset 0px 39px 27px -23px black; }
+      .slotMachine > div > div:last-child {
+        bottom: 0;
+        -webkit-box-shadow: inset 0px -45px 27px -23px black;
+        -moz-box-shadow: inset 0px -45px 27px -23px black;
+        box-shadow: inset 0px -45px 27px -23px black; }
+      .slotMachine > div > div:first-of-type {
+        top: 0; }
+
+.slotMachine__slotOne {
+  left: 212px; }
+
+.slotMachine__slotTwo {
+  left: 418px; }
+
+.slotMachine__slotThree {
+  left: 624px; }
+
+.nav-tabs li {
+  background-color: white;
+  padding: 6px 12px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: inline-block;
+  margin-right: 1px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  color: #cc3e3a; }
+  .nav-tabs li:hover {
+    background-color: #cc3e3a;
+    color: white; }
+.nav-tabs .active {
+  background-color: #cc3e3a;
+  color: white;
+  cursor: default; }
+
+.history {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  font-size: 24px; }
+
+.tab-content {
+  flex: 1;
+  border: 2px solid #cc3e3a;
+  padding: 6px; }
+  .tab-content > div {
+    display: none;
+    height: 250px; }
+  .tab-content .tab-active {
+    overflow-y: scroll;
+    display: block; }
+    .tab-content .tab-active .tab-infos {
+      padding: 6px;
+      border: 2px solid #cc3e3a;
+      margin-right: 6px;
+      margin-bottom: 6px;
+      display: flex;
+      flex-direction: column; }
+    .tab-content .tab-active .tab-textInfos {
+      display: flex;
+      align-items: center; }
+      .tab-content .tab-active .tab-textInfos .button_more {
+        font-size: 36px;
+        padding: 0 24px;
+        cursor: pointer;
+        color: #cc3e3a;
+        display: inline-block;
+        width: 20px; }
+      .tab-content .tab-active .tab-textInfos .tab-date {
+        flex: 1; }
+      .tab-content .tab-active .tab-textInfos .tab-value {
+        margin-right: 24px; }
+    .tab-content .tab-active .tab-skins-hidden {
+      display: none; }
+    .tab-content .tab-active .tab-skins {
+      margin: 0 24px;
+      margin-top: 12px;
+      display: block; }
+    .tab-content .tab-active img {
+      width: 75px;
+      border: 2px solid #cc3e3a;
+      padding: 3px;
+      cursor: context-menu;
+      margin: 6px; }

@@ -1,0 +1,17 @@
+extends ../layout.jade
+
+block main
+  main.depot__main
+    h2 Dépot
+    .depot__left.depot
+      .inventory__container.dropper#inventory
+      .tradeItems
+        ul(id='list')
+        p Total :
+          span.prices#totalPrice 0
+        form(method='post')
+          input(type='submit' value="Créer une offre d'échange")
+          input(type="hidden" value='' name='ids' id='ids') 
+        script(type='text/javascript', src='./js/loadInventory.js')  
+        script(type='text/javascript', src='./js/depot.js')
+          
